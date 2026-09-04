@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثل الخروف الضال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="top-nav glass-panel">
+        <a href="index.html" class="back-btn">⬅ العودة للرئيسية</a>
+    </nav>
+
+    <main class="container">
+        <section class="parable-card glass-panel fade-in-up">
+            <div class="card-header">
+                <h1 class="glowing-text">مثل الخروف الضال</h1>
+                <span class="reference">إنجيل لوقا 15: 1-7</span>
+            </div>
+            
+            <div class="media-container">
+                <video controls class="flashy-border">
+                    <source src="الابن الضال.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio controls class="flashy-audio">
+                    <source src="الخروف الضال.opus" type="audio/ogg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="content-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'text')">نص المثل</button>
+                <button class="tab-btn" onclick="openTab(event, 'interp')">التفسير</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">معلومات إضافية</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <p>أيُّ إنسانٍ مِنكُمْ لهُ مِئَةُ خَروفٍ، وأضاعَ واحِدًا مِنها، ألا يترُكُ التِّسعَةَ والتِّسعينَ في البَرّيَّةِ، ويَذهَبَ لأجلِ الضّالِّ حتَّى يَجِدَهُ؟ وَإِذَا وَجَدَهُ يَضَعُهُ عَلَى مَنْكِبَيْهِ فَرِحًا، وَيَأْتِي إِلَى بَيْتِهِ وَيَدْعُو الأَصْدِقَاءَ وَالْجِيرَانَ قَائِلاً لَهُمُ: افْرَحُوا مَعِي، لأَنِّي وَجَدْتُ خَرُوفِي الضَّالَّ! أَقُولُ لَكُمْ: إِنَّهُ هكَذَا يَكُونُ فَرَحٌ فِي السَّمَاءِ بِخَاطِئٍ وَاحِدٍ يَتُوبُ أَكْثَرَ مِنْ تِسْعَةٍ وَتِسْعِينَ بَارًّا لاَ يَحْتَاجُونَ إِلَى تَوْبَةٍ.</p>
+            </div>
+            <div id="interp" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>الراعي:</strong> يرمز إلى السيد المسيح (أو الله) الذي يسعى وراء الإنسان التائه.</li>
+                    <li><strong>الخروف الضال:</strong> يرمز إلى الإنسان الذي انحرف عن طريق الله وبات مفقوداً.</li>
+                    <li><strong>فرح السماء:</strong> توجد فرحة عظيمة في السماء بتوبة خاطئ واحد متضع، أكثر من تسعة وتسعين باراً لا يحتاجون إلى توبة.</li>
+                    <li>أن الله يهتم اكتر بالخطاة من الابرار حتي لو الابرار كان عددهم كتير، والسماء بتفرح باي خاطئ يرجع لحضن الكنيسة.</li>
+                </ul>
+            </div>
+            <div id="info" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>ترك التسعة والتسعين:</strong> لا يعني الإهمال للأبرار، بل يؤكد على القيمة المطلقة واللانهائية لكل نفس بشرية واحدة في نظر الله؛ فالله مستعد أن يبذل كل الجهد ليخلص فرداً واحداً.</li>
+                    <li><strong>الرعاة في اليهودية:</strong> كان الرعاة قديماً يعرفون كل خروف في القطيع باسمه ويهتمون بكل تفاصيله، وهذا يعكس معرفة الله الشخصية والعميقة بكل إنسان منا.</li>
+                    <li><strong>حمله على منكبيه:</strong> يشير المنكبان إلى القوة. الله لا يعاتب الخاطئ العائد بل يحمله بقوته ويريحه من تعب الضلال ليرجعه آمناً إلى الحظيرة (الكنيسة).</li>
+                    <li>يرتبط هذا المثل ارتباطاً وثيقاً بمثل "الدرهم المفقود" و"الابن الضال" في إنجيل لوقا، وكلها تؤكد على بحث الله المستمر عن الإنسان.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>مشروع مقدم من <strong>كنيسة الشهيد العظيم مارجرجس الأثرية</strong> و <strong>كنيسة القديسة العظيمة بربارة</strong> بمصر القديمة ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

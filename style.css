@@ -1,0 +1,380 @@
+:root {
+    --primary-color: #8c52ff;
+    --secondary-color: #ff914d;
+    --accent-color: #00e5ff;
+    --bg-color: #0b0c10;
+    --text-color: #ffffff;
+    --glass-bg: rgba(20, 20, 30, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    line-height: 1.8;
+}
+
+/* Background Animations */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #1a1a2e, #0b0c10);
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    animation: float 20s infinite alternate;
+}
+
+.orb-1 { width: 300px; height: 300px; background: var(--primary-color); top: 10%; left: 20%; }
+.orb-2 { width: 400px; height: 400px; background: var(--secondary-color); bottom: 10%; right: 10%; animation-delay: -5s; }
+.orb-3 { width: 250px; height: 250px; background: var(--accent-color); top: 40%; left: 60%; animation-delay: -10s; }
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+
+/* Glassmorphism */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+/* Typography & Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards ease-out;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.glowing-text {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(140, 82, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.church-sponsor {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.church-sponsor strong {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+.fancy-hero {
+    text-align: center;
+    padding: 60px 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    border: 2px solid rgba(140, 82, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.fancy-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%; width: 200%; height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 6s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; top: -100%; }
+    20% { left: 100%; top: 100%; }
+    100% { left: 100%; top: 100%; }
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.parable-nav-card {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.parable-nav-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(140, 82, 255, 0.4);
+    border-color: var(--primary-color);
+}
+
+.card-image {
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.bg-prodigal { background: url('prodigal.jpg') center/cover no-repeat; border-bottom: 2px solid var(--primary-color); }
+.bg-virgins { background: url('virgins.jpg') center/cover no-repeat; border-bottom: 2px solid var(--secondary-color); }
+.bg-sheep { background: url('sheep.jpg') center/cover no-repeat; border-bottom: 2px solid var(--accent-color); }
+.bg-samaritan { background: url('samaritan.jpg') center/cover no-repeat; border-bottom: 2px solid #f12711; }
+.bg-sower { background: url('sower.jpg') center/cover no-repeat; border-bottom: 2px solid #11998e; }
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.btn-flashy {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.parable-nav-card:hover .btn-flashy {
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+/* Individual Parable Pages */
+.top-nav {
+    padding: 15px 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.parable-card {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 40px;
+}
+
+.card-header { text-align: center; margin-bottom: 40px; }
+
+/* Media Elements */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.flashy-border {
+    border: 3px solid transparent;
+    background-image: linear-gradient(#000, #000), linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 20px rgba(140,82,255,0.4);
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+}
+
+audio {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 50px;
+}
+
+audio::-webkit-media-controls-panel {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.video-placeholder {
+    width: 100%;
+    max-width: 700px;
+    height: 393px; /* 16:9 aspect ratio approx */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.coming-soon {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tabs */
+.content-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: var(--accent-color);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.tab-content.active { display: block; }
+
+.fancy-list {
+    list-style: none;
+}
+
+.fancy-list li {
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+.fancy-list li::before {
+    content: '✨';
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .glowing-text {
+        font-size: 2.2rem;
+    }
+    
+    .fancy-hero {
+        padding: 40px 20px;
+        margin: 20px 10px;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .parable-card {
+        padding: 20px;
+        margin: 0 10px 40px;
+    }
+    
+    .content-tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    .video-placeholder {
+        height: 250px;
+    }
+    
+    .coming-soon {
+        font-size: 1.5rem;
+    }
+    
+    .top-nav {
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+}

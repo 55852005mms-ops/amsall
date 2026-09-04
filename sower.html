@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثل الزارع</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="top-nav glass-panel">
+        <a href="index.html" class="back-btn">⬅ العودة للرئيسية</a>
+    </nav>
+
+    <main class="container">
+        <section class="parable-card glass-panel fade-in-up">
+            <div class="card-header">
+                <h1 class="glowing-text">مثل الزارع</h1>
+                <span class="reference">إنجيل مرقس 4: 1-20، متى 13: 13-23، لوقا 8: 4-15</span>
+            </div>
+            
+            <div class="media-container">
+                <video controls class="flashy-border">
+                    <source src="الزارع.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio controls class="flashy-audio">
+                    <source src="الزارع.opus" type="audio/ogg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="content-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'text')">نص المثل</button>
+                <button class="tab-btn" onclick="openTab(event, 'interp')">التفسير</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">معلومات إضافية</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <p>فكلَّمَهُمْ كثيرًا بأمثالٍ قائلًا: «هوذا الزّارِعُ قد خرجَ ليَزرَعَ، وفيما هو يَزرَعُ سقَطَ بَعضٌ علَى الطريقِ، فجاءَتِ الطُّيورُ وأكلَتهُ. وسَقَطَ آخَرُ علَى الأماكِنِ المُحجِرَةِ، حَيثُ لم تكُنْ لهُ تُربَةٌ كثيرَةٌ، فنَبَتَ حالًا إذ لم يَكُنْ لهُ عُمقُ أرضٍ. ولكن لَمّا أشرَقَتِ الشَّمسُ احتَرَقَ، وإذ لم يَكُنْ لهُ أصلٌ جَفَّ. وسَقَطَ آخَرُ علَى الشَّوْكِ، فطَلَعَ الشَّوْكُ وخَنَقَهُ. وسَقَطَ آخَرُ علَى الأرضِ الجَيِّدَةِ فأعطَى ثَمَرًا، بَعضٌ مِئَةً وآخَرُ سِتّينَ وآخَرُ ثَلاثينَ. مَنْ لهُ أُذُنانِ للسَّمعِ، فليَسمَعْ».</p>
+            </div>
+            <div id="interp" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>الزارع:</strong> يمثل السيد المسيح أو كل من يبشر بكلمة الله.</li>
+                    <li><strong>البذار (الزرع):</strong> يمثل كلمة الله أو رسالة الملكوت.</li>
+                    <li><strong>الأرض (التربة):</strong> تمثل قلوب البشر واستجابتهم لكلمة الله.</li>
+                    <li><strong>الأرض على الطريق (المضروبة):</strong> الإنسان الذي يسمع كلمة الله ولا يفهمها أو يرفض استيعابها، فينتزع الشرير الكلمة لكي لا يؤمن.</li>
+                    <li><strong>الأرض المحجرة:</strong> الإنسان الذي يسمع الكلمة ويقبلها بفرح، لكن ليس له أصل، فعند الضيق يتعثر.</li>
+                    <li><strong>الأرض المملوءة شوكاً:</strong> الإنسان الذي يسمع الكلمة، لكن هموم الحياة وغرور الغنى تخنق الكلمة فيصير بلا ثمر.</li>
+                    <li><strong>الأرض الجيدة (الطيبة):</strong> الإنسان الصالح الذي يسمع الكلمة بقلب نقي وواعي، فيحفظها ويطبقها وتثمر فيه.</li>
+                </ul>
+            </div>
+            <div id="info" class="tab-content">
+                <ul class="fancy-list">
+                    <li>هذا هو المثل الوحيد الذي قدم السيد المسيح تفسيره بالكامل وبشكل صريح ومفصل لتلاميذه، مما يجعله المفتاح لفهم باقي الأمثال.</li>
+                    <li>الزرع (كلمة الله) هو زرع نقي وقوي دائماً. المشكلة ليست أبداً في جودة الزرع أو مهارة الزارع، بل في <strong>طبيعة التربة</strong> (استعداد قلب الإنسان).</li>
+                    <li>الزراعة قديماً كانت تتم بنثر البذور باليد قبل حرث الأرض، ولهذا كان من الطبيعي أن تقع بعض البذور على الطرقات أو بين الأشواك.</li>
+                    <li>النسب المذكورة للثمار (ثلاثين، وستين، ومئة) توضح أن حتى بين المؤمنين المخلصين (الأرض الجيدة) تتفاوت درجات النمو الروحي والثمار باختلاف الاستجابة لعمل النعمة.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>مشروع مقدم من <strong>كنيسة الشهيد العظيم مارجرجس الأثرية</strong> و <strong>كنيسة القديسة العظيمة بربارة</strong> بمصر القديمة ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
