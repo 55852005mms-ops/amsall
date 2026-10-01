@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثل السامري الصالح</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="top-nav glass-panel">
+        <a href="index.html" class="back-btn">⬅ العودة للرئيسية</a>
+        <div class="xp-display glowing-text" style="font-size: 1.2rem; margin: 0; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">⭐ 0 XP</div>
+    </nav>
+
+    <main class="container">
+        <section class="parable-card glass-panel fade-in-up" data-parable-id="samaritan">
+            <div class="card-header">
+                <h1 class="glowing-text">مثل السامري الصالح</h1>
+                <span class="reference">إنجيل لوقا 10: 25-37</span>
+            </div>
+            
+            <div class="media-container">
+                <video controls class="flashy-border" style="width: 100%; border-radius: 15px; margin-bottom: 1rem;">
+                    <source src="السامري.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio controls class="flashy-audio">
+                    <source src="السامري الصالح.opus" type="audio/ogg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="content-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'text')">نص المثل</button>
+                <button class="tab-btn" onclick="openTab(event, 'interp')">التفسير</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">معلومات إضافية</button>
+                <button class="tab-btn" onclick="openTab(event, 'game')">🎮 اللعبة التفاعلية</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <p>25 وَإِذَا نَامُوسِيٌّ قَامَ يُجَرِّبُهُ قَائِلاً:«يَا مُعَلِّمُ، مَاذَا أَعْمَلُ لأَرِثَ الْحَيَاةَ الأَبَدِيَّةَ؟» 26 فَقَالَ لَهُ:«مَا هُوَ مَكْتُوبٌ فِي النَّامُوسِ. كَيْفَ تَقْرَأُ؟» 27 فَأَجَابَ وَقَالَ:«تُحِبُّ الرَّبَّ إِلهَكَ مِنْ كُلِّ قَلْبِكَ، وَمِنْ كُلِّ نَفْسِكَ، وَمِنْ كُلِّ قُدْرَتِكَ، وَمِنْ كُلِّ فِكْرِكَ، وَقَرِيبَكَ مِثْلَ نَفْسِكَ». 28 فَقَالَ لَهُ:«بِالصَّوَابِ أَجَبْتَ. اِفْعَلْ هذَا فَتَحْيَا». 29 وَأَمَّا هُوَ فَإِذْ أَرَادَ أَنْ يُبَرِّرَ نَفْسَهُ، قَاَلَ لِيَسُوعَ: «وَمَنْ هُوَ قَرِيبِي؟» 30 فَأَجَابَ يَسُوعُ وَقَالَ: «إِنْسَانٌ كَانَ نَازِلاً مِنْ أُورُشَلِيمَ إِلَى أَرِيحَا، فَوَقَعَ بَيْنَ لُصُوصٍ، فَعَرَّوْهُ وَجَرَّحُوهُ، وَمَضَوْا وَتَرَكُوهُ بَيْنَ حَيٍّ وَمَيْتٍ. 31 فَعَرَضَ أَنَّ كَاهِنًا نَزَلَ فِي تِلْكَ الطَّرِيقِ، فَرَآهُ وَجَازَ مُقَابِلَهُ. 32 وَكَذلِكَ لاَوِيٌّ أَيْضًا، إِذْ صَارَ عِنْدَ الْمَكَانِ جَاءَ وَنَظَرَ وَجَازَ مُقَابِلَهُ. 33 وَلكِنَّ سَامِرِيًّا مُسَافِرًا جَاءَ إِلَيْهِ، وَلَمَّا رَآهُ تَحَنَّنَ، 34 فَتَقَدَّمَ وَضَمَدَ جِرَاحَاتِهِ، وَصَبَّ عَلَيْهَا زَيْتًا وَخَمْرًا، وَأَرْكَبَهُ عَلَى دَابَّتِهِ، وَأَتَى بِهِ إِلَى فُنْدُق وَاعْتَنَى بِهِ. 35 وَفِي الْغَدِ لَمَّا مَضَى أَخْرَجَ دِينَارَيْنِ وَأَعْطَاهُمَا لِصَاحِبِ الْفُنْدُقِ، وَقَالَ لَهُ: اعْتَنِ بِهِ، وَمَهْمَا أَنْفَقْتَ أَكْثَرَ فَعِنْدَ رُجُوعِي أُوفِيكَ. 36 فَأَيَّ هؤُلاَءِ الثَّلاَثَةِ تَرَى صَارَ قَرِيبًا لِلَّذِي وَقَعَ بَيْنَ اللُّصُوصِ؟» 37 فَقَالَ: «الَّذِي صَنَعَ مَعَهُ الرَّحْمَةَ». فَقَالَ لَهُ يَسُوعُ: «اذْهَبْ أَنْتَ أَيْضًا وَاصْنَعْ هكَذَا».</p>
+            </div>
+            <div id="interp" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>المعنى الرمزي:</strong> الإنسان النازل من أورشليم إلى أريحا يرمز إلى البشرية التي انحدرت من حالة القداسة إلى الخطية، فتعرضت لهجوم الشيطان (اللصوص) الذي عراها من ثوب البر والبراءة.</li>
+                    <li><strong>السامري الصالح:</strong> هو رمز للسيد المسيح الذي جاء ليشفي جراح البشرية ويعيدها إلى الحياة.</li>
+                    <li><strong>الزيت والخمر والفندق:</strong> صب الزيت (رمز الروح القدس) والخمر (رمز سرّ الإفخارستيا)، وأدخل الإنسان الجريح إلى الفندق (الكنيسة) ليجد الشفاء والراحة.</li>
+                    <li><strong>المعنى العملي:</strong> الكاهن واللاوي يمثلان المعرفة بلا عمل، والخدمة الشكلية بلا قلب، أما السامري فقد تحرك قلبه بالحنان فترجم المحبة إلى فعل ملموس. ويرى أن “قريبي” هو كل إنسان محتاج، وليس من يربطني به قرب دم أو مذهب، فالمحبة الحقيقية لا تعرف التعصب.</li>
+                </ul>
+            </div>
+            <div id="info" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>المحبة والعمل:</strong> المحبة الحقيقية تبدأ من القلب قبل العمل. والله هو من يدبر كل فرصة لعمل الخير ويحث الإنسان على الاستجابة.</li>
+                    <li><strong>الوديعة:</strong> كل مال أو موهبة نملكها هي وديعة من الله لخدمة الآخرين.</li>
+                    <li><strong>تضحية المسيح:</strong> السيد المسيح نفسه هو “السامري الصالح” الذي لم يعطِ فقط دينارين، بل بذل دمه وحياته لخلاصنا. ويجب أن نسعى، مثل المسيح، إلى كسب الناس لا إلى خسارتهم، وأن ننظر إلى النقط البيضاء في حياتهم لا إلى نقائصهم.</li>
+                    <li><strong>الرسالة العامة:</strong> يدعو هذا المثل إلى أن تكون المحبة أساس التعامل الإنساني، وأن نرى في كل محتاج فرصة لخدمة المسيح نفسه، فالمحبة التي لا تميز هي جوهر الإيمان العملي وحياة الشركة مع الله.</li>
+                </ul>
+            </div>
+            
+            <div id="game" class="tab-content">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 20px;">اختر التصرفات والأدوات الصحيحة لإنقاذ الجريح 🚑</h3>
+                <div class="game-container samaritan-game">
+                    <p style="text-align: center; margin-bottom: 20px;">هناك 3 تصرفات/أدوات صحيحة. حاول العثور عليها!</p>
+                    <div id="samaritan-items" class="timeline-cards" style="background: none; padding: 0;">
+                        <!-- Generated via JS -->
+                    </div>
+                    <p id="samaritan-feedback" style="text-align: center; margin-top: 20px; font-weight: bold; font-size: 1.2rem;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>مشروع مقدم من <strong>كنيسة الشهيد العظيم مارجرجس الأثرية</strong> و <strong>كنيسة القديسة العظيمة بربارة</strong> بمصر القديمة ❤️</p>
+    </footer>
+    <script src="parablesData.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof parablesData === 'undefined') return;
+            const gameData = parablesData['samaritan'].items;
+            const container = document.getElementById('samaritan-items');
+            
+            let selectedCount = 0;
+            const correctTotal = gameData.filter(i => i.correct).length;
+            
+            // Shuffle
+            const shuffled = [...gameData].sort(() => Math.random() - 0.5);
+            
+            shuffled.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'timeline-card glass-panel';
+                card.style.cursor = 'pointer';
+                card.innerHTML = `<div class="card-icon">${item.icon}</div><div class="card-text">${item.name}</div>`;
+                
+                card.onclick = () => {
+                    if (card.classList.contains('selected')) return;
+                    
+                    if (item.correct) {
+                        card.style.borderColor = 'var(--accent-color)';
+                        card.style.boxShadow = '0 0 15px var(--accent-color)';
+                        card.classList.add('selected');
+                        selectedCount++;
+                        
+                        document.getElementById('samaritan-feedback').style.color = 'var(--accent-color)';
+                        document.getElementById('samaritan-feedback').innerText = 'إجابة صحيحة! أحسنت.';
+                        
+                        if (selectedCount === correctTotal) {
+                            document.getElementById('samaritan-feedback').innerText = 'تهانينا! لقد تصرفت كالسامري الصالح وأنقذت الجريح!';
+                            if(typeof markGameCompleted === 'function') markGameCompleted('samaritan');
+                        }
+                    } else {
+                        card.style.borderColor = '#ff4d4d';
+                        card.style.boxShadow = '0 0 15px #ff4d4d';
+                        document.getElementById('samaritan-feedback').style.color = '#ff4d4d';
+                        document.getElementById('samaritan-feedback').innerText = 'هذا التصرف غير صحيح. تذكر المحبة والرحمة!';
+                        setTimeout(() => {
+                            card.style.borderColor = 'var(--primary-color)';
+                            card.style.boxShadow = '';
+                        }, 1500);
+                    }
+                };
+                container.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>

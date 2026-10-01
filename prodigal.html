@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثل الابن الضال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="top-nav glass-panel">
+        <a href="index.html" class="back-btn">⬅ العودة للرئيسية</a>
+        <div class="xp-display glowing-text" style="font-size: 1.2rem; margin: 0; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">⭐ 0 XP</div>
+    </nav>
+
+    <main class="container">
+        <section class="parable-card glass-panel fade-in-up" data-parable-id="prodigal">
+            <div class="card-header">
+                <h1 class="glowing-text">مثل الابن الضال</h1>
+                <span class="reference">إنجيل لوقا 15: 11-32</span>
+            </div>
+
+            <div class="media-container">
+                <video controls class="flashy-border" style="width: 100%; border-radius: 15px; margin-bottom: 1rem;">
+                    <source src="الابن الضـــال.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio controls class="flashy-audio">
+                    <source src="الابن الضال.opus" type="audio/ogg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="content-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'text')">نص المثل</button>
+                <button class="tab-btn" onclick="openTab(event, 'interp')">التفسير</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">معلومات إضافية</button>
+                <button class="tab-btn" onclick="openTab(event, 'game')">🎮 اللعبة التفاعلية</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <p>11 وَقَالَ:«إِنْسَانٌ كَانَ لَهُ ابْنَانِ. 12 فَقَالَ أَصْغَرُهُمَا لأَبِيهِ: يَا أَبِي أَعْطِنِي
+                    الْقِسْمَ الَّذِي يُصِيبُنِي مِنَ الْمَالِ. فَقَسَمَ لَهُمَا مَعِيشَتَهُ. 13 وَبَعْدَ أَيَّامٍ
+                    لَيْسَتْ بِكَثِيرَةٍ جَمَعَ الابْنُ الأَصْغَرُ كُلَّ شَيْءٍ وَسَافَرَ إِلَى كُورَةٍ بَعِيدَةٍ،
+                    وَهُنَاكَ بَذَّرَ مَالَهُ بِعَيْشٍ مُسْرِفٍ. 14 فَلَمَّا أَنْفَقَ كُلَّ شَيْءٍ، حَدَثَ جُوعٌ شَدِيدٌ
+                    فِي تِلْكَ الْكُورَةِ، فَابْتَدَأَ يَحْتَاجُ. 15 فَمَضَى وَالْتَصَقَ بِوَاحِدٍ مِنْ أَهْلِ تِلْكَ
+                    الْكُورَةِ، فَأَرْسَلَهُ إِلَى حُقُولِهِ لِيَرْعَى خَنَازِيرَ. 16 وَكَانَ يَشْتَهِي أَنْ يَمْلأَ
+                    بَطْنَهُ مِنَ الْخُرْنُوبِ الَّذِي كَانَتِ الْخَنَازِيرُ تَأْكُلُهُ، فَلَمْ يُعْطِهِ أَحَدٌ. 17
+                    فَرَجَعَ إِلَى نَفْسِهِ وَقَالَ: كَمْ مِنْ أَجِيرٍ لأَبِي يَفْضُلُ عَنْهُ الْخُبْزُ وَأَنَا أَهْلِكُ
+                    جُوعًا 18 أَقُومُ وَأَذْهَبُ إِلَى أَبِي وَأَقُولُ لَهُ: يَا أَبِي، أَخْطَأْتُ إِلَى السَّمَاءِ
+                    وَقُدَّامَكَ، 19 وَلَسْتُ مُسْتَحِقًّا بَعْدُ أَنْ أُدْعَى لَكَ ابْنًا. اِجْعَلْنِي كَأَحَدِ
+                    أَجْرَاكَ. 20 فَقَامَ وَجَاءَ إِلَى أَبِيهِ. وَإِذْ كَانَ لَمْ يَزَلْ بَعِيدًا رَآهُ أَبُوهُ،
+                    فَتَحَنَّنَ وَرَكَضَ وَوَقَعَ عَلَى عُنُقِهِ وَقَبَّلَهُ. 21 فَقَالَ لَهُ الابْنُ:يَا أَبِي،
+                    أَخْطَأْتُ إِلَى السَّمَاءِ وَقُدَّامَكَ، وَلَسْتُ مُسْتَحِقًّا بَعْدُ أَنْ أُدْعَى لَكَ ابْنًا. 22
+                    فَقَالَ الأَبُ لِعَبِيدِهِ: أَخْرِجُوا الْحُلَّةَ الأُولَى وَأَلْبِسُوهُ، وَاجْعَلُوا خَاتَمًا فِي
+                    يَدِهِ، وَحِذَاءً فِي رِجْلَيْهِ، 23 وَقَدِّمُوا الْعِجْلَ الْمُسَمَّنَ وَاذْبَحُوهُ فَنَأْكُلَ
+                    وَنَفْرَحَ، 24 لأَنَّ ابْنِي هذَا كَانَ مَيِّتًا فَعَاشَ، وَكَانَ ضَالاًّ فَوُجِدَ. فَابْتَدَأُوا
+                    يَفْرَحُونَ. 25 وَكَانَ ابْنُهُ الأَكْبَرُ فِي الْحَقْلِ. فَلَمَّا جَاءَ وَقَرُبَ مِنَ الْبَيْتِ،
+                    سَمِعَ صَوْتَ آلاَتِ طَرَبٍ وَرَقْصًا. 26 فَدَعَا وَاحِدًا مِنَ الْغِلْمَانِ وَسَأَلَهُ: مَا عَسَى
+                    أَنْ يَكُونَ هذَا؟ 27 فَقَالَ لَهُ: أَخُوكَ جَاءَ فَذَبَحَ أَبُوكَ الْعِجْلَ الْمُسَمَّنَ، لأَنَّهُ
+                    قَبِلَهُ سَالِمًا. 28 فَغَضِبَ وَلَمْ يُرِدْ أَنْ يَدْخُلَ. فَخَرَجَ أَبُوهُ يَطْلُبُ إِلَيْهِ. 29
+                    فَأَجَابَ وَقَالَ لأَبِيهِ: هَا أَنَا أَخْدِمُكَ سِنِينَ هذَا عَدَدُهَا، وَقَطُّ لَمْ أَتَجَاوَزْ
+                    وَصِيَّتَكَ، وَجَدْيًا لَمْ تُعْطِنِي قَطُّ لأَفْرَحَ مَعَ أَصْدِقَائِي. 30 وَلكِنْ لَمَّا جَاءَ
+                    ابْنُكَ هذَا الَّذِي أَكَلَ مَعِيشَتَكَ مَعَ الزَّوَانِي، ذَبَحْتَ لَهُ الْعِجْلَ الْمُسَمَّنَ 31
+                    فَقَالَ لَهُ: يَا بُنَيَّ أَنْتَ مَعِي فِي كُلِّ حِينٍ، وَكُلُّ مَا لِي فَهُوَ لَكَ. 32 وَلكِنْ
+                    كَانَ يَنْبَغِي أَنْ نَفْرَحَ وَنُسَرَّ، لأَنَّ أَخَاكَ هذَا كَانَ مَيِّتًا فَعَاشَ، وَكَانَ ضَالُا
+                    فَوُجِدَ».</p>
+            </div>
+            <div id="interp" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>الأب:</strong> يرمز إلى الله الذي تظهر محبته للخطاة وعطاياه الجزيلة لهم إذا تابوا.</li>
+                    <li><strong>الابن الأصغر:</strong> يرمز للخطاة والعشارين الذين يبتعدون عن الله والكنيسة في شهوات
+                        العالم. وسفره لكورة بعيدة يرمز للسقوط في الأنانية، وتبذير المال يرمز لإضاعة الطاقات في أمور
+                        العالم الزائلة.</li>
+                    <li><strong>الابن الأكبر:</strong> يمثل اليهود أو المتكبرين أو المرتبطين بالله شكلاً.</li>
+                    <li><strong>رعاية الخنازير:</strong> الخنازير تمثل النجاسة وأعمال العالم المرتبطة بالشهوات. وصاحب
+                        العمل هو الشيطان الذي يستدرج الإنسان بلذة الشهوات حتى يذله ويقوده للهلاك.</li>
+                    <li><strong>التوبة والرجوع:</strong> "رجع إلى نفسه" ترمز للإنسان الذي يذل بالخطية فيذكره الله بحياته
+                        الأولى في الكنيسة، فيشتاق للتوبة ويعود بإنسحاق.</li>
+                    <li><strong>محبة الآب:</strong> جرى مسرعاً ليعانقه غير مبال بقذارته، لأن محبة الله تغفر كل خطايانا.
+                        ولم يدعه يكمل اعترافه ليكون أجيراً بل وهبه بنوة كاملة.</li>
+                    <li><strong>عطايا الأب:</strong> الحلة الأولى هي ثوب البر (المعمودية أو التوبة)، الخاتم هو ختم الروح
+                        القدس (سر الميرون)، والحذاء هو السير بكلمة الله التي تؤكد البنوة.</li>
+                    <li><strong>العجل المسمن:</strong> يرمز للمسيح إلهنا الذى ذبح على الصليب لفدائنا، ونأكله جسداً ودماً
+                        حقيقيين على المذبح.</li>
+                    <li><strong>البيت وآلات الطرب:</strong> البيت هو الكنيسة، وآلات الطرب هي التسابيح المرتفعة فرحاً
+                        بعودة الخاطئ.</li>
+                </ul>
+            </div>
+            <div id="info" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>خداع إبليس:</strong> إبليس يخدعك بأن الحرية هي إشباع شهواتك المادية، وينسيك أنك تخسر
+                        بنوتك لله ورعايته لك. فأطع الوصية لتحتفظ ببنوتك في الكنيسة.</li>
+                    <li><strong>الخرنوب:</strong> قرون جوفاء يصل طولها إلى 30سم تتدلى من أشجار تعطى للحيوانات. ترمز للشر
+                        والطعام الأجوف الذي لا يشبع (الماديات)، ومع ذلك لم يعطه أحد منها.</li>
+                    <li><strong>الذل والخلاص:</strong> الشيطان يستدرجك بلذة الشهوات حتى يذلك ويقودك للهلاك. فارجع سريعاً
+                        بالتوبة قبل أن يذلك. إن حنان الله فوق كل تخيل، وهو لا ينفر من خطايانا بل بحبه يرفعها عنا.</li>
+                    <li><strong>مقارنة الأجير والابن:</strong> المبتدئ في الحياة الروحية الذي يرمز إليه الأجير يشبع
+                        روحياً في الكنيسة، بينما الإبن الذي يلبس حذاء يؤكد بنوته، أما العامل الأجير فليس له حذاء.</li>
+                    <li>هذا المثل هو من أشهر أمثال المسيح التي تظهر محبة الله، ويُسمّى الابن الضال أحياناً بـ "الابن
+                        الشاطر" لأنه رجع إلى نفسه واكتشف نتائج خطيته.</li>
+                </ul>
+            </div>
+            
+            <div id="game" class="tab-content">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 20px;">رتب أحداث المثل بالترتيب الصحيح (سحب وإفلات)</h3>
+                <div class="game-container prodigal-game">
+                    <div id="timeline-slots" class="timeline-slots">
+                        <!-- Slots generated via JS -->
+                    </div>
+                    <div id="timeline-cards" class="timeline-cards">
+                        <!-- Cards generated via JS -->
+                    </div>
+                    <button class="btn-flashy" onclick="checkProdigalGame()" style="display: block; margin: 30px auto;">التحقق من الترتيب ✨</button>
+                    <p id="game-feedback" style="text-align: center; margin-top: 15px; font-weight: bold;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>مشروع مقدم من <strong>كنيسة الشهيد العظيم مارجرجس الأثرية</strong> و <strong>كنيسة القديسة العظيمة
+                بربارة</strong> بمصر القديمة ❤️</p>
+    </footer>
+    <script src="parablesData.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Prodigal Son Game Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof parablesData === 'undefined') return;
+            const gameData = parablesData['prodigal'].timeline;
+            const slotsContainer = document.getElementById('timeline-slots');
+            const cardsContainer = document.getElementById('timeline-cards');
+            
+            // Create Slots
+            gameData.forEach((item, index) => {
+                const slot = document.createElement('div');
+                slot.className = 'timeline-slot';
+                slot.setAttribute('data-index', index + 1);
+                slot.innerHTML = `<span>الحدث ${index + 1}</span>`;
+                
+                slot.addEventListener('dragover', (e) => e.preventDefault());
+                slot.addEventListener('drop', handleDrop);
+                slotsContainer.appendChild(slot);
+            });
+            
+            // Create Cards (shuffled)
+            const shuffled = [...gameData].sort(() => Math.random() - 0.5);
+            shuffled.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'timeline-card glass-panel';
+                card.draggable = true;
+                card.setAttribute('data-id', item.id);
+                card.innerHTML = `<div class="card-icon">${item.icon}</div><div class="card-text">${item.text}</div>`;
+                
+                card.addEventListener('dragstart', handleDragStart);
+                cardsContainer.appendChild(card);
+            });
+            
+            // Also allow dropping back to cards container
+            cardsContainer.addEventListener('dragover', (e) => e.preventDefault());
+            cardsContainer.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.appendChild(draggedCard);
+            });
+        });
+        
+        let draggedCard = null;
+        
+        function handleDragStart(e) {
+            draggedCard = this;
+            setTimeout(() => this.style.opacity = '0.5', 0);
+        }
+        
+        document.addEventListener('dragend', () => {
+            if (draggedCard) draggedCard.style.opacity = '1';
+        });
+        
+        function handleDrop(e) {
+            e.preventDefault();
+            // If slot already has a card, don't allow drop unless it's swapping (too complex, just reject for now)
+            // Or allow it if we only have the span child
+            const existingCard = this.querySelector('.timeline-card');
+            if (!existingCard) {
+                this.appendChild(draggedCard);
+            }
+        }
+        
+        function checkProdigalGame() {
+            const slots = document.querySelectorAll('.timeline-slot');
+            let isCorrect = true;
+            let count = 0;
+            
+            slots.forEach((slot, index) => {
+                const card = slot.querySelector('.timeline-card');
+                if (card) {
+                    count++;
+                    if (parseInt(card.getAttribute('data-id')) !== index + 1) {
+                        isCorrect = false;
+                    }
+                } else {
+                    isCorrect = false;
+                }
+            });
+            
+            const feedback = document.getElementById('game-feedback');
+            if (count < 5) {
+                feedback.style.color = 'var(--secondary-color)';
+                feedback.innerText = "الرجاء وضع جميع البطاقات في الأماكن المخصصة!";
+            } else if (isCorrect) {
+                feedback.style.color = 'var(--accent-color)';
+                feedback.innerText = "إجابة صحيحة! أحسنت!";
+                if(typeof markGameCompleted === 'function') markGameCompleted('prodigal');
+            } else {
+                feedback.style.color = '#ff4d4d';
+                feedback.innerText = "ترتيب خاطئ، حاول مرة أخرى!";
+            }
+        }
+    </script>
+</body>
+
+</html>

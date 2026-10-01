@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثل الزارع</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="top-nav glass-panel">
+        <a href="index.html" class="back-btn">⬅ العودة للرئيسية</a>
+        <div class="xp-display glowing-text" style="font-size: 1.2rem; margin: 0; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">⭐ 0 XP</div>
+    </nav>
+
+    <main class="container">
+        <section class="parable-card glass-panel fade-in-up" data-parable-id="sower">
+            <div class="card-header">
+                <h1 class="glowing-text">مثل الزارع</h1>
+                <span class="reference">إنجيل مرقس 4: 1-20، متى 13: 13-23، لوقا 8: 4-15</span>
+            </div>
+            
+            <div class="media-container">
+                <video controls class="flashy-border">
+                    <source src="الزارع.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio controls class="flashy-audio">
+                    <source src="الزارع.opus" type="audio/ogg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="content-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'text')">نص المثل</button>
+                <button class="tab-btn" onclick="openTab(event, 'interp')">التفسير</button>
+                <button class="tab-btn" onclick="openTab(event, 'info')">معلومات إضافية</button>
+                <button class="tab-btn" onclick="openTab(event, 'game')">🎮 اللعبة التفاعلية</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <p>فكلَّمَهُمْ كثيرًا بأمثالٍ قائلًا: «هوذا الزّارِعُ قد خرجَ ليَزرَعَ، وفيما هو يَزرَعُ سقَطَ بَعضٌ علَى الطريقِ، فجاءَتِ الطُّيورُ وأكلَتهُ. وسَقَطَ آخَرُ علَى الأماكِنِ المُحجِرَةِ، حَيثُ لم تكُنْ لهُ تُربَةٌ كثيرَةٌ، فنَبَتَ حالًا إذ لم يَكُنْ لهُ عُمقُ أرضٍ. ولكن لَمّا أشرَقَتِ الشَّمسُ احتَرَقَ، وإذ لم يَكُنْ لهُ أصلٌ جَفَّ. وسَقَطَ آخَرُ علَى الشَّوْكِ، فطَلَعَ الشَّوْكُ وخَنَقَهُ. وسَقَطَ آخَرُ علَى الأرضِ الجَيِّدَةِ فأعطَى ثَمَرًا، بَعضٌ مِئَةً وآخَرُ سِتّينَ وآخَرُ ثَلاثينَ. مَنْ لهُ أُذُنانِ للسَّمعِ، فليَسمَعْ».</p>
+            </div>
+            <div id="interp" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>الزارع والبذار:</strong> الزارع هو ربنا يسوع... والبذار هي (بذار الإيمان الجيّدة) كلمة ربنا اللي إرادته ثابتة: الجميع يخلصون وإلى معرفة الحق يُقبلون... اللي اتغيّر بس هي الأرض.</li>
+                    <li><strong>على الطريق:</strong> واحد مش عايز يسمع... الكلام مش بيخش القلب فييجي الشيطان ويخطفه. مثل الكتبة والفريسيين الذين لم يركزوا مع تعليم يسوع بل أرادوا اصطياد خطأ له.</li>
+                    <li><strong>على الأرض المحجرة:</strong> إنسان سطحي... مالوش أصل، الرياح بتودّيه وتجيبه... ساعة لقلبك وساعة لربك (مع إن ربنا قال: يا ابني أعطني قلبك).</li>
+                    <li><strong>وسط الشوك:</strong> إنسان مشغول... زي ديماس اللي ساب بولس الرسول لأنه أحب العالم الحاضر، وزي الشاب الغني اللي غناه شغله، وزي فيلكس الوالي اللي ارتعد ومشى بولس بدل ما يؤمن.</li>
+                    <li><strong>الأرض الجيدة:</strong> إنسان بيحب ربنا من كل قلبه... مطيع لوصية ربنا... يخبئ كلام ربنا في قلبه... مستعد يحمل الصليب، ويجاهد في حياته الروحية... ده يجيب الثمر.</li>
+                </ul>
+            </div>
+            <div id="info" class="tab-content">
+                <ul class="fancy-list">
+                    <li><strong>الاستجابة للكلمة:</strong> ممكن واحد يسمع ويفرح وينفّذ... وواحد تاني يسمع فيدوّر ضهره ويمشي.</li>
+                    <li><strong>أمثلة عملية:</strong> زي الشاب الغني، لمّا ربنا قال له اذهب بع كل مالك وتعالى اتبعني... فمضى حزيناً. بينما الأنبا أنطونيوس لمّا سمعها في الكنيسة بتتقري، نفّذها وباع الـ 300 فدّان ووزّع على الفقراء وطلع على الصحراء وأصبح أب الرهبنة.</li>
+                    <li><strong>أهمية السمع:</strong> عشان كده ربنا ختم المثل بجملة (من له أذنان للسمع، فليسمع).</li>
+                </ul>
+            </div>
+            
+            <div id="game" class="tab-content">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 20px;">ازرع البذار في الأرض المناسبة لتعطي ثمراً! 🌱</h3>
+                <div class="game-container sower-game">
+                    <!-- Seed Source -->
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <p style="margin-bottom: 10px; font-weight: bold;">اسحب البذرة 🌾 وازرعها:</p>
+                        <div id="seed-source" class="timeline-card glass-panel" draggable="true" style="margin: 0 auto; width: 100px; padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <div class="card-icon" style="font-size: 3rem;">🌾</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soil Drop Zones -->
+                    <div id="soils-container" class="timeline-slots">
+                        <div class="timeline-slot" data-soil="wayside" style="border-color: #777;">
+                            <span>على الطريق 🛣️</span>
+                            <div class="soil-result" style="display:none; text-align:center;">🦅 الطيور أكلتها!</div>
+                        </div>
+                        <div class="timeline-slot" data-soil="stony" style="border-color: #aaa;">
+                            <span>الأرض المحجرة 🪨</span>
+                            <div class="soil-result" style="display:none; text-align:center;">☀️ جفت من الشمس!</div>
+                        </div>
+                        <div class="timeline-slot" data-soil="thorns" style="border-color: #3b5323;">
+                            <span>بين الشوك 🌿</span>
+                            <div class="soil-result" style="display:none; text-align:center;">🌿 خنقها الشوك!</div>
+                        </div>
+                        <div class="timeline-slot" data-soil="good" style="border-color: var(--primary-color);">
+                            <span>الأرض الجيدة 🌍</span>
+                            <div class="soil-result" style="display:none; text-align:center; color: var(--accent-color); font-weight: bold;">🍇 أعطت ثمراً كثيراً!</div>
+                        </div>
+                    </div>
+                    
+                    <p id="sower-feedback" style="text-align: center; margin-top: 20px; font-weight: bold; font-size: 1.2rem;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>مشروع مقدم من <strong>كنيسة الشهيد العظيم مارجرجس الأثرية</strong> و <strong>كنيسة القديسة العظيمة بربارة</strong> بمصر القديمة ❤️</p>
+    </footer>
+    <script src="parablesData.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const seed = document.getElementById('seed-source');
+            const slots = document.querySelectorAll('.timeline-slot');
+            const feedback = document.getElementById('sower-feedback');
+            
+            let draggedSeed = null;
+            
+            seed.addEventListener('dragstart', (e) => {
+                draggedSeed = seed;
+                setTimeout(() => seed.style.opacity = '0.5', 0);
+            });
+            seed.addEventListener('dragend', () => {
+                seed.style.opacity = '1';
+            });
+            
+            slots.forEach(slot => {
+                slot.addEventListener('dragover', (e) => e.preventDefault());
+                slot.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    if(!draggedSeed) return;
+                    
+                    // Show result
+                    const resultDiv = slot.querySelector('.soil-result');
+                    const soilType = slot.getAttribute('data-soil');
+                    
+                    // Hide other results
+                    slots.forEach(s => {
+                        const r = s.querySelector('.soil-result');
+                        if (r) r.style.display = 'none';
+                    });
+                    
+                    resultDiv.style.display = 'block';
+                    
+                    if (soilType === 'good') {
+                        feedback.style.color = 'var(--accent-color)';
+                        feedback.innerText = 'أحسنت! الأرض الجيدة هي القلب الذي يسمع الكلمة ويحفظها ويأتي بثمر. 🍇';
+                        if(typeof markGameCompleted === 'function') markGameCompleted('sower');
+                    } else if (soilType === 'wayside') {
+                        feedback.style.color = '#ff4d4d';
+                        feedback.innerText = 'جاءت الطيور 🦅 وأكلت البذرة.. هذا يمثل من يسمع الكلمة ولا يفهمها فيخطفها الشرير!';
+                    } else if (soilType === 'stony') {
+                        feedback.style.color = '#ff4d4d';
+                        feedback.innerText = 'أحرقتها الشمس ☀️ لعدم وجود عمق.. هذا يمثل من يقبل الكلمة لكنه لا يثبت وقت التجربة.';
+                    } else if (soilType === 'thorns') {
+                        feedback.style.color = '#ff4d4d';
+                        feedback.innerText = 'طلع الشوك وخنق البذرة 🌿.. هذا يمثل من تلهيه هموم الحياة وغرور الغنى عن كلمة الله.';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
